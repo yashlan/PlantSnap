@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551DB9982B7753F900B698A9 /* PlantHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DB9972B7753F900B698A9 /* PlantHome.swift */; };
+		551DB99A2B7755F700B698A9 /* PlantDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DB9992B7755F700B698A9 /* PlantDetails.swift */; };
+		551DB99D2B775D3C00B698A9 /* PlantListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DB99C2B775D3C00B698A9 /* PlantListResponse.swift */; };
+		551DB9A02B775E3100B698A9 /* PlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DB99F2B775E3100B698A9 /* PlantListView.swift */; };
+		551DB9A22B77610A00B698A9 /* PlantListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DB9A12B77610A00B698A9 /* PlantListItemView.swift */; };
+		551DB9A42B77625700B698A9 /* PlantListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DB9A32B77625700B698A9 /* PlantListController.swift */; };
 		5594DCF52B6D5E210004F4DD /* PlantSnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594DCF42B6D5E210004F4DD /* PlantSnapApp.swift */; };
 		5594DCF72B6D5E210004F4DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594DCF62B6D5E210004F4DD /* ContentView.swift */; };
 		5594DCF92B6D5E220004F4DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5594DCF82B6D5E220004F4DD /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		551DB9972B7753F900B698A9 /* PlantHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHome.swift; sourceTree = "<group>"; };
+		551DB9992B7755F700B698A9 /* PlantDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetails.swift; sourceTree = "<group>"; };
+		551DB99C2B775D3C00B698A9 /* PlantListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListResponse.swift; sourceTree = "<group>"; };
+		551DB99F2B775E3100B698A9 /* PlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListView.swift; sourceTree = "<group>"; };
+		551DB9A12B77610A00B698A9 /* PlantListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListItemView.swift; sourceTree = "<group>"; };
+		551DB9A32B77625700B698A9 /* PlantListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListController.swift; sourceTree = "<group>"; };
 		5594DCF12B6D5E210004F4DD /* PlantSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5594DCF42B6D5E210004F4DD /* PlantSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSnapApp.swift; sourceTree = "<group>"; };
 		5594DCF62B6D5E210004F4DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		551DB9942B77534E00B698A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				551DB9A32B77625700B698A9 /* PlantListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		551DB9952B77536400B698A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				551DB99F2B775E3100B698A9 /* PlantListView.swift */,
+				551DB9A12B77610A00B698A9 /* PlantListItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		551DB9962B77537000B698A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				551DB9972B7753F900B698A9 /* PlantHome.swift */,
+				551DB9992B7755F700B698A9 /* PlantDetails.swift */,
+				551DB99C2B775D3C00B698A9 /* PlantListResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		551DB99B2B77572B00B698A9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5594DCF42B6D5E210004F4DD /* PlantSnapApp.swift */,
+				5594DCF62B6D5E210004F4DD /* ContentView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		5594DCE82B6D5E210004F4DD = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +99,10 @@
 		5594DCF32B6D5E210004F4DD /* PlantSnap */ = {
 			isa = PBXGroup;
 			children = (
-				5594DCF42B6D5E210004F4DD /* PlantSnapApp.swift */,
-				5594DCF62B6D5E210004F4DD /* ContentView.swift */,
+				551DB99B2B77572B00B698A9 /* Base */,
+				551DB9962B77537000B698A9 /* Model */,
+				551DB9952B77536400B698A9 /* View */,
+				551DB9942B77534E00B698A9 /* Controller */,
 				5594DCF82B6D5E220004F4DD /* Assets.xcassets */,
 				5594DCFA2B6D5E220004F4DD /* Preview Content */,
 			);
@@ -138,6 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5594DCF72B6D5E210004F4DD /* ContentView.swift in Sources */,
+				551DB9982B7753F900B698A9 /* PlantHome.swift in Sources */,
+				551DB9A02B775E3100B698A9 /* PlantListView.swift in Sources */,
+				551DB9A42B77625700B698A9 /* PlantListController.swift in Sources */,
+				551DB9A22B77610A00B698A9 /* PlantListItemView.swift in Sources */,
+				551DB99D2B775D3C00B698A9 /* PlantListResponse.swift in Sources */,
+				551DB99A2B7755F700B698A9 /* PlantDetails.swift in Sources */,
 				5594DCF52B6D5E210004F4DD /* PlantSnapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
