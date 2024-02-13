@@ -33,12 +33,25 @@ struct PlantDetailsHeaderView : View {
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 4)
                 }
             } else {
-                Image(systemName: "photo")
+                Image(systemName: "photo.artframe")
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                     .foregroundColor(.gray)
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 4)
                     .clipped()
+                    .overlay {
+                        VStack {
+                            Text("No Image Available")
+                                .bold()
+                                .font(.title3)
+                                .padding(8)
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle(.white)
+                        }
+                        .background(Color.black)
+                                .opacity(0.8)
+                                .cornerRadius(10.0)
+                    }
             }
         }
      }
