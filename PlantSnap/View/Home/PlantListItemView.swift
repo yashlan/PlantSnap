@@ -25,12 +25,25 @@ struct PlantListItemView: View {
                     ProgressView()
                 }
             } else {
-                Image(systemName: "photo")
+                Image(systemName: "photo.artframe")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 70, height: 70)
-                    .foregroundColor(.gray)
+                    .foregroundStyle(.gray)
                     .cornerRadius(8)
+                    .overlay {
+                        VStack {
+                            Text("No Image")
+                                .bold()
+                                .font(.caption)
+                                .padding(4)
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle(.white)
+                        }
+                        .background(Color.black)
+                                .opacity(0.8)
+                                .cornerRadius(10.0)
+                    }
             }
             
             VStack(alignment: .leading, spacing: 5) {
