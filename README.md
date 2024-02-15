@@ -1,7 +1,14 @@
-latihan membuat app dengan swift ui pemula
+# PlantSnap
+latihan membuat mobile app dengan SwiftUI pemula
 
 PlantSnap merupakan app berfungsi untuk mengeksplorasi tentang tumbuhan, berdasarkan data-data botani (spesies, panduan perawatan, tahap pertumbuhan, gambar, dll) yang ada pada situs: [perenual.com](https://perenual.com/)
 
+# Preview
+<img src="https://github.com/yashlan/PlantSnap/blob/main/ss/ss_1.gif" width="200" /> <img src="https://github.com/yashlan/PlantSnap/blob/main/ss/ss_2.gif" width="200" /> <img src="https://github.com/yashlan/PlantSnap/blob/main/ss/ss_3.gif" width="200" /> 
+
+
+
+# Info
 Endpoint Plant List<br>
 ``` curl
 GET https://perenual.com/api/species-list?key=YOUR_API_KEY
