@@ -27,7 +27,7 @@ struct PlantListView : View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: ProfilePage()) {
-                        Label("Profile", systemImage: "person.circle")
+                        Label("Profile", systemImage: "person.crop.circle")
                     }
                 }
             }

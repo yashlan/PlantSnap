@@ -10,12 +10,12 @@ import SwiftUI
 struct Constant {
     
     private struct Domains {
-        static let API_KEY = ""
+        static let API_KEY = "sk-lNdo65bd2255b9cd74009"
         static let BaseUrl = "https://perenual.com/api/"
     }
     
     struct Config {
-        static let FetchDataFromLocal = true;
+        static let FetchDataFromLocal = false;
         static let MyColorScheme: ColorScheme = .light
     }
 
